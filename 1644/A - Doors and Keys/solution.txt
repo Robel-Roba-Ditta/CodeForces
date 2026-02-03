@@ -1,0 +1,1 @@
+t= int(input())for _ in range(t):    s = input().strip()    key= set()    possible = True     for ch in s:        if ch.islower():            key.add(ch)        else:            if ch.lower()  not in key:                possible = False                 break    if possible:        print("YES")    else:        print("NO")
